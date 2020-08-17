@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action_home"
+    android:background="@drawable/home2">
+
+    <ImageView
+        android:id="@+id/tvtitle"
+        android:layout_width="264dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@mipmap/logo"
+
+        />
+
+
+    <Button
+
+        android:id="@+id/todaymenu"
+        android:layout_width="220dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="249dp"
+        android:background="@drawable/roundedbtn4"
+        android:text="Today's Menu"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/Logout"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="680dp"
+        android:background="@drawable/roundbuttonlog"
+        android:text="LogOut"
+        android:textColor="#FFFFFF"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="5dp" />
+
+
+</RelativeLayout>
+

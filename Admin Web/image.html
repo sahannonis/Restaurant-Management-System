@@ -1,0 +1,109 @@
+<html>
+    <head>
+<style>
+*{
+	margin: 0px 0px 0px 0px ;
+	padding:0px 0px 0px 0px ;
+}
+#image1
+{
+	background-image: url("images/Pizza.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin: 0px 0px 0px 0px ;
+	padding:0px 0px 0px 0px ;
+	width: 100%;
+	height: 100%;
+	max-width: 100%
+}
+#image2
+{
+    float:right;
+
+}
+.myButton {
+	-moz-box-shadow: -1px 1px 12px 0px #899599;
+	-webkit-box-shadow: -1px 1px 12px 0px #899599;
+	box-shadow: -1px 1px 12px 0px #899599;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:31px;
+	-webkit-border-radius:31px;
+	border-radius:31px;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:10px 34px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #e1e2ed;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
+	background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-webkit-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-o-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:-ms-linear-gradient(top, #bab1ba 5%, #ededed 100%);
+	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bab1ba', endColorstr='#ededed',GradientType=0);
+	background-color:#bab1ba;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+p  {
+  color: red;
+  font-family: courier;
+  font-size: 100%;
+}
+</style>
+
+    </head>
+    <body>
+        <div id=image1>
+         
+            <div id="image2"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+               <p> Please Insert Your Image and wait for Url<br>
+                   to appear and Copy the URL<br>
+                 and Paste it on your AddItem page If you<br>
+                  want to Add a Image to your item,Press<br>
+                   Go Back After Copy and Paste your URL </p>
+                <table><tr><td>
+            <input type="file" id="file" name="file" class="myButton" />
+        </td></tr>
+        <tr><td>
+            <textarea id='urlcode' rows="4" cols="50"></textarea>
+        </td></tr>
+               </table>
+            <button class="myButton" onclick="pop()">Copy</button>
+            <a href="additem.html"><Button class="myButton">Go Back</Button></a>
+            </div>
+        
+        </div>   
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyAWGo8zrzCa7DJ3RByLagmE61bcXPcLEx4",
+        authDomain: "logindemo-69d60.firebaseapp.com",
+        databaseURL: "https://logindemo-69d60.firebaseio.com",
+        projectId: "logindemo-69d60",
+        storageBucket: "logindemo-69d60.appspot.com",
+        messagingSenderId: "41632343623"
+    };
+    firebase.initializeApp(config);
+    </script>
+<script src = "image.js"></script>
+
+</body>
+</html>

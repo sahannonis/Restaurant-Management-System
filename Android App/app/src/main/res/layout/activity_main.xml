@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp">
+
+
+        <Button
+            android:id="@+id/btntypePizza"
+
+            android:text="Pizza"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:onClick="switchpizza"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonshape2"
+            />
+
+        <Button
+            android:id="@+id/btntypeDrink"
+
+            android:text="Drink"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:onClick="switchdrinks"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonshape2"/>
+
+        <Button
+        android:id="@+id/btntypePasta"
+
+        android:text="Pasta"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:onClick="switchpasta"
+        android:layout_width="75dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonshape2" />
+        <Button
+            android:id="@+id/btntypeDesert"
+
+            android:text="Dessert"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:onClick="switchdesert"
+            android:layout_width="78dp"
+            android:layout_height="30dp"
+            android:background="@drawable/buttonshape2" />
+
+        <Button
+            android:id="@+id/ViewCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+
+            android:layout_weight="0"
+            android:background="@drawable/buttonshape1"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:onClick="viewcart"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="View Cart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

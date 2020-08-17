@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewCartActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        >
+
+
+        <TextView
+            android:id="@+id/Amount"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:text="Amount" />
+
+        <Button
+            android:id="@+id/placeorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="placeorder"
+            android:background="@drawable/buttonshape1"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:layout_marginLeft="55dp"
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Place Order"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+        <Button
+            android:id="@+id/BacktoCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:onClick="BacktoCart"
+            android:layout_weight="1"
+            android:background="@drawable/buttonshape1"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+
+            android:shadowDy="0"
+            android:shadowRadius="0"
+            android:text="Add More"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

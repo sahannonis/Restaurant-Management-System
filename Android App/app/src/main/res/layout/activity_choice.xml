@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".action_home"
+    android:background="@drawable/pizzalogo1">
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="264dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Choose one"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="26sp" />
+
+
+    <Button
+        android:id="@+id/DineIn"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginLeft="5000dp"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="331dp"
+        android:background="@drawable/button5"
+        android:text="Dine In"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/Takeaway"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginLeft="5000dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="331dp"
+        android:background="@drawable/button5"
+        android:text="Delievery"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/Delievery"
+        android:layout_width="100dp"
+        android:layout_height="47dp"
+        android:layout_alignParentEnd="true"
+
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_marginLeft="5000dp"
+        android:layout_marginEnd="155dp"
+        android:layout_marginBottom="331dp"
+        android:background="@drawable/button5"
+        android:text="TakeAway"
+        android:typeface="sans"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+
+</RelativeLayout>
+
